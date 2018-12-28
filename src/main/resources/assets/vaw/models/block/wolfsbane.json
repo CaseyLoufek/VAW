@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "particle": "vaw:blocks/wolfsbane",
+        "cross": "vaw:blocks/wolfsbane"
+    }
+}

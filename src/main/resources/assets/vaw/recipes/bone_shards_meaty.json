@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "M"
+    ],
+    
+    "key":
+    {   
+        "M":
+        {
+            "item": "faunaandecology:bone_meaty"
+        }
+    },
+    
+    "result":
+    {
+        "item": "faunaandecology:shards_bone",
+        "count": 2
+    }
+    
+}

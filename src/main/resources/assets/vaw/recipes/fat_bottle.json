@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "F",
+        "B"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "minecraft:glass_bottle"
+        },
+        
+        "F":
+        {
+            "item": "faunaandecology:fat"
+        }
+    },
+    
+    "result":
+    {
+        "item": "faunaandecology:fat_bottle",
+        "count": 1
+    }
+    
+}

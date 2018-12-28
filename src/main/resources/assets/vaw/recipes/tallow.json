@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "O"
+    ],
+    
+    "key":
+    {   
+        "O":
+        {
+            "item": "faunaandecology:oil_bottle"
+        }
+    },
+    
+    "result":
+    {
+        "item": "faunaandecology:tallow",
+        "count": 1
+    }
+    
+}

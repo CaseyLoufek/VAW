@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "faunaandecology:raw_bat"
+    },
+    {
+      "item": "faunaandecology:bowl_water"
+    }
+  ],
+  "result": {
+    "item": "faunaandecology:bat_stew_raw"
+  }
+}

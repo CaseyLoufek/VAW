@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "H",
+        "H"
+    ],
+    
+    "key":
+    {
+        "H":
+        {
+            "item": "faunaandecology:hair_horse"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:string",
+        "count": 1
+    }
+    
+}

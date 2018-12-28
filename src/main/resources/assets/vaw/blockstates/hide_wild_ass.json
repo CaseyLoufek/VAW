@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "axis=false,flip=false,hanging=false": { "model": "faunaandecology:hide_wild_ass" },
+        "axis=false,flip=true,hanging=false": { "model": "faunaandecology:hide_wild_ass", "y": 180 },
+        "axis=true,flip=false,hanging=false":  { "model": "faunaandecology:hide_wild_ass", "y": 90 },
+        "axis=true,flip=true,hanging=false":  { "model": "faunaandecology:hide_wild_ass", "y": 270 },
+        "axis=false,flip=false,hanging=true": { "model": "faunaandecology:hide_wild_ass", "x": 270  },
+        "axis=false,flip=true,hanging=true": { "model": "faunaandecology:hide_wild_ass", "x": 270, "y": 180 },
+        "axis=true,flip=false,hanging=true":  { "model": "faunaandecology:hide_wild_ass", "x": 270, "y": 90 },
+        "axis=true,flip=true,hanging=true":  { "model": "faunaandecology:hide_wild_ass", "x": 270, "y": 270 }
+    }
+}

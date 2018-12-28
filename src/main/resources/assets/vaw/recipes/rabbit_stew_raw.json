@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:rabbit"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "faunaandecology:bowl_water"
+    }
+  ],
+  "result": {
+    "item": "faunaandecology:rabbit_stew_raw"
+  }
+}

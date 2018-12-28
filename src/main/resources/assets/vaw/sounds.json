@@ -1,0 +1,44 @@
+{
+    "mob.zebra.ambient": {
+        "category": "neutral",
+        "subtitle": "mob.zebra.ambient",
+        "sounds": [{"name": "faunaandecology:mob/zebra_ambient1", "stream" : "true"},{"name": "faunaandecology:mob/zebra_ambient2", "stream" : "true"},{"name": "faunaandecology:mob/zebra_ambient3", "stream" : "true"},{"name": "faunaandecology:mob/zebra_ambient4", "stream" : "true"}]      
+    },
+    "mob.zebra.hurt": {
+        "category": "neutral",
+        "subtitle": "mob.zebra.hurt",
+        "sounds": [{"name": "faunaandecology:mob/zebra_hurt1", "stream" : "true"},{"name": "faunaandecology:mob/zebra_hurt2", "stream" : "true"},{"name": "faunaandecology:mob/zebra_hurt3", "stream" : "true"}]      
+    },
+    "mob.zebra.angry": {
+        "category": "neutral",
+        "subtitle": "mob.zebra.angry",
+        "sounds": [{"name": "faunaandecology:mob/zebra_angry1", "stream" : "true"},{"name": "faunaandecology:mob/zebra_angry2", "stream" : "true"}]      
+    },
+    "mob.zebra.death": {
+        "category": "neutral",
+        "subtitle": "mob.zebra.death",
+        "sounds": [{"name": "faunaandecology:mob/zebra_death1", "stream" : "true"}, {"name": "faunaandecology:mob/zebra_death2", "stream" : "true"}, {"name": "faunaandecology:mob/zebra_death3", "stream" : "true"}]      
+    },
+    
+    
+    "mob.duck.ambient": {
+        "category": "neutral",
+        "subtitle": "mob.duck.ambient",
+        "sounds": [{"name": "faunaandecology:mob/duck_ambient1", "stream" : "true"},{"name": "faunaandecology:mob/duck_ambient2", "stream" : "true"},{"name": "faunaandecology:mob/duck_ambient3", "stream" : "true"},{"name": "faunaandecology:mob/duck_ambient4", "stream" : "true"}]      
+    },
+    "mob.duck.hurt": {
+        "category": "neutral",
+        "subtitle": "mob.duck.hurt",
+        "sounds": [{"name": "faunaandecology:mob/duck_hurt1", "stream" : "true"},{"name": "faunaandecology:mob/duck_hurt2", "stream" : "true"},{"name": "faunaandecology:mob/duck_hurt3", "stream" : "true"}]      
+    },
+    "mob.duck.angry": {
+        "category": "neutral",
+        "subtitle": "mob.duck.angry",
+        "sounds": [{"name": "faunaandecology:mob/duck_angry2", "stream" : "true"},{"name": "faunaandecology:mob/duck_angry3", "stream" : "true"},{"name": "faunaandecology:mob/duck_angry1", "stream" : "true"},{"name": "faunaandecology:mob/duck_angry4", "stream" : "true"}]      
+    },
+    "mob.duck.death": {
+        "category": "neutral",
+        "subtitle": "mob.duck.death",
+        "sounds": [{"name": "faunaandecology:mob/duck_death1", "stream" : "true"}, {"name": "faunaandecology:mob/duck_death2", "stream" : "true"}, {"name": "faunaandecology:mob/duck_death3", "stream" : "true"}]      
+    }
+}

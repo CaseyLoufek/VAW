@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "L",
+        "L"
+    ],
+    
+    "key":
+    {
+        "L":
+        {
+            "type": "forge:ore_dict",
+            "ore": "tanninRich"
+        }
+    },
+    
+    "result":
+    {
+        "item": "faunaandecology:tannin_powder",
+        "count": 4
+    }
+    
+}

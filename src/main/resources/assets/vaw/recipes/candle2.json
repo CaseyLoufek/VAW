@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "S",
+        "F"
+    ],
+    
+    "key":
+    {
+        "S":
+        {
+            "item": "minecraft:string"
+        },
+        
+        "F":
+        {
+            "item": "faunaandecology:oil_bottle"
+        }
+    },
+    
+    "result":
+    {
+        "item": "faunaandecology:candle",
+        "count": 4
+    }
+    
+}

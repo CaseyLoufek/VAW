@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "axis=false,flip=false,hanging=false": { "model": "faunaandecology:hide_mouflon_female" },
+        "axis=false,flip=true,hanging=false": { "model": "faunaandecology:hide_mouflon_female", "y": 180 },
+        "axis=true,flip=false,hanging=false":  { "model": "faunaandecology:hide_mouflon_female", "y": 90 },
+        "axis=true,flip=true,hanging=false":  { "model": "faunaandecology:hide_mouflon_female", "y": 270 },
+        "axis=false,flip=false,hanging=true": { "model": "faunaandecology:hide_mouflon_female", "x": 270  },
+        "axis=false,flip=true,hanging=true": { "model": "faunaandecology:hide_mouflon_female", "x": 270, "y": 180 },
+        "axis=true,flip=false,hanging=true":  { "model": "faunaandecology:hide_mouflon_female", "x": 270, "y": 90 },
+        "axis=true,flip=true,hanging=true":  { "model": "faunaandecology:hide_mouflon_female", "x": 270, "y": 270 }
+    }
+}

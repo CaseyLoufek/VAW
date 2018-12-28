@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "axis=false,flip=false,hanging=false": { "model": "faunaandecology:hide_horse_chestnut" },
+        "axis=false,flip=true,hanging=false": { "model": "faunaandecology:hide_horse_chestnut", "y": 180 },
+        "axis=true,flip=false,hanging=false":  { "model": "faunaandecology:hide_horse_chestnut", "y": 90 },
+        "axis=true,flip=true,hanging=false":  { "model": "faunaandecology:hide_horse_chestnut", "y": 270 },
+        "axis=false,flip=false,hanging=true": { "model": "faunaandecology:hide_horse_chestnut", "x": 270  },
+        "axis=false,flip=true,hanging=true": { "model": "faunaandecology:hide_horse_chestnut", "x": 270, "y": 180 },
+        "axis=true,flip=false,hanging=true":  { "model": "faunaandecology:hide_horse_chestnut", "x": 270, "y": 90 },
+        "axis=true,flip=true,hanging=true":  { "model": "faunaandecology:hide_horse_chestnut", "x": 270, "y": 270 }
+    }
+}

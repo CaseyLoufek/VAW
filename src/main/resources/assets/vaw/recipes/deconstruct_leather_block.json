@@ -1,0 +1,13 @@
+
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "faunaandecology:leather_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:leather",
+    "count": 9
+  }
+}

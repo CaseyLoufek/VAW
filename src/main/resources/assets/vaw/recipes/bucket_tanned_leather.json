@@ -1,0 +1,41 @@
+
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "hideCut"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "hideCut"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "hideCut"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "hideCut"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "faunaandecology:tannin_powder"
+    },
+    {
+      "item": "faunaandecology:tannin_powder"
+    },
+    {
+      "item": "faunaandecology:tannin_powder"
+    },
+    {
+      "item": "faunaandecology:tannin_powder"
+    }
+  ],
+  "result": {
+    "item": "minecraft:leather",
+        "count": 4
+  }
+}

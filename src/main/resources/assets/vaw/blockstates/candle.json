@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=up": { "model": "vaw:normal_candle" },
+        "facing=east": { "model": "vaw:normal_candle_wall" },
+        "facing=south": { "model": "vaw:normal_candle_wall", "y": 90 },
+        "facing=west": { "model": "vaw:normal_candle_wall", "y": 180 },
+        "facing=north": { "model": "vaw:normal_candle_wall", "y": 270 }
+    }
+}

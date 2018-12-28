@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "vaw:blocks/garlics_stage_3"
+    }
+}

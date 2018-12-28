@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:wheat"
+        },
+        {
+            "item": "minecraft:fishing_rod"
+        }
+    ],
+    "result": {
+        "item": "faunaandecology:wheat_on_a_stick"
+    }
+}

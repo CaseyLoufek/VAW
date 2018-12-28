@@ -1,0 +1,11 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "faunaandecology:bucket_curdle"
+    }
+  ],
+  "result": {
+        "item": "faunaandecology:cheese_cow"
+  }
+}

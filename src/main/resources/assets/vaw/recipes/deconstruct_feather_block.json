@@ -1,0 +1,13 @@
+
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "faunaandecology:feather_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:feather",
+    "count": 9
+  }
+}
