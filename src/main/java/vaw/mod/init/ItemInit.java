@@ -5,7 +5,6 @@ import java.util.List;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import vaw.mod.objects.items.ItemModSeedFood;
 import vaw.mod.objects.tools.ToolStake;
 

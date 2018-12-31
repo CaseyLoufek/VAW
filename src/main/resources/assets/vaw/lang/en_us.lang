@@ -1,16 +1,8 @@
 itemGroup.faunaandecology=Fauna and Ecology
 itemGroup.vaw=Vampires and Werewolves
 
-item.axe_flint.name=Flint Hatchet
-item.shovel_flint.name=Flint Spade
-item.pickaxe_flint.name=Flint Pick
-item.knife_flint.name=Flint Knife
-
-item.knife_iron.name=Iron Knife
-item.knife_diamond.name=Diamond Knife
-item.knife_gold.name=Gold Knife
-item.knife_stone.name=Stone Knife
-item.knife_wood.name=Wood Knife
+item.garlic.name=Garlic
+tile.wolfsbane.name=Wolfsbane
 
 item.bone_meaty.name=Meaty Bone
 item.fat_bottle.name=Raw Fat Bottle

@@ -5,7 +5,6 @@ import net.minecraft.item.ItemPickaxe;
 import vaw.mod.Main;
 import vaw.mod.init.ItemInit;
 import vaw.mod.util.IHasModel;
-import vaw.mod.util.Reference;
 
 public class ToolPickaxe extends ItemPickaxe implements IHasModel 
 {

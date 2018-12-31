@@ -4,7 +4,6 @@ import java.io.File;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -17,12 +16,12 @@ import vaw.mod.init.EntityInit;
 import vaw.mod.proxy.CommonProxy;
 import vaw.mod.util.Config;
 import vaw.mod.util.Reference;
-import vaw.mod.util.handlers.CraftingHandler;
 import vaw.mod.util.handlers.EventsHandler;
 import vaw.mod.util.handlers.FuelHandler;
 import vaw.mod.util.handlers.GUIHandler;
 import vaw.mod.util.handlers.RecipeHandler;
 import vaw.mod.util.handlers.RegistryHandler;
+import vaw.mod.worldgen.WolfsbaneGen;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME,  version = Reference.VERSION)
 
@@ -47,8 +46,6 @@ public class Main {
         CommonProxy.config = new Configuration(new File(directory.getPath(), "vaw.cfg"));
         Config.readConfig();
 
-		CraftingHandler.removeRecipes();
-
         EntityInit.init();
         proxy.initModels();
      
@@ -61,21 +58,14 @@ public class Main {
 
 		RegistryHandler.initRegistries();
 		
-
+		GameRegistry.registerWorldGenerator(new WolfsbaneGen(), 0);
+		
         NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GUIHandler());
-
 	}
 	
 	@EventHandler
 	public static void postInit(FMLPostInitializationEvent event) 
 	{
-
-		//BiomeDictionary.registerAllBiomes();
-		
-		if (Loader.isModLoaded("famm")){
-			isFAMMloaded = true;
-		}
-			
 		RecipeHandler.RegisterCrafting();
 		RecipeHandler.RegisterSmelting();
 		

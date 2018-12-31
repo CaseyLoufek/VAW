@@ -5,7 +5,6 @@ import java.util.Set;
 import com.google.common.collect.Sets;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.EnchantmentDamage;
@@ -19,7 +18,6 @@ import net.minecraft.item.ItemTool;
 import net.minecraft.util.math.MathHelper;
 import vaw.mod.Main;
 import vaw.mod.init.ItemInit;
-import vaw.mod.objects.blocks.BlockHide;
 import vaw.mod.util.IHasModel;
 import vaw.mod.util.Reference;
 

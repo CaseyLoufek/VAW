@@ -42,7 +42,6 @@ public class BlockModPlant extends BlockBush implements IHasModel
     	if (worldIn.getLight(pos) < 16 && worldIn.getCurrentMoonPhaseFactor() == 0.0F && (rand.nextInt(25) == 0)) 
         {
             int i = 5;
-            int j = 4;
 
             for (BlockPos blockpos : BlockPos.getAllInBoxMutable(pos.add(-4, -1, -4), pos.add(4, 1, 4)))
             {

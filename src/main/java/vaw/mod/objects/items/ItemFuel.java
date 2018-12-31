@@ -15,7 +15,7 @@ public class ItemFuel extends Item implements IHasModel
     
 	public ItemFuel(String name)
 	{
-        this.setMaxStackSize(Config.bottleStackSize);
+        //this.setMaxStackSize(Config.bottleStackSize);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Reference.VampiresAndWerewolves);

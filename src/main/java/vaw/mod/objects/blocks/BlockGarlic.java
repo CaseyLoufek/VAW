@@ -3,7 +3,6 @@ package vaw.mod.objects.blocks;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import vaw.mod.Main;
 import vaw.mod.init.BlockInit;
 import vaw.mod.init.ItemInit;

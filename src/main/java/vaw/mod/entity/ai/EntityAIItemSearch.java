@@ -101,24 +101,24 @@ public class EntityAIItemSearch extends EntityAIBase
     	double d0 = this.thisAnimal.getDistanceSq(this.foundItem);
         if (d0 <= 0.5D)
         {
-        	if (Config.enableAdvancedStats == true)
-    		{
-    	    	if (this.foundItem.getItem().getItem() instanceof ItemFood)
-    	    	{
-    	    		ItemFood eatenFood = (ItemFood)this.foundItem.getItem().getItem();
-
-    	    		float newHunger = animal.getHunger() + eatenFood.getHealAmount(this.foundItem.getItem()) + eatenFood.getSaturationModifier(this.foundItem.getItem()); 
-    	    		int newHappiness = (int) (animal.getHappiness() + eatenFood.getHealAmount(this.foundItem.getItem()) + eatenFood.getSaturationModifier(this.foundItem.getItem())); 
-
-    	    		animal.setHunger(newHunger*this.foundItem.getItem().getCount());
-    	    		animal.setHappiness(newHappiness*this.foundItem.getItem().getCount());    	
-    	    	}
-    	    	else
-    	    	{
-    	    		//stacksize loop here
-    	            this.thisAnimal.eatGrassBonus();
-    	    	}
-	    	}        	
+//        	if (Config.enableAdvancedStats == true)
+//    		{
+//    	    	if (this.foundItem.getItem().getItem() instanceof ItemFood)
+//    	    	{
+//    	    		ItemFood eatenFood = (ItemFood)this.foundItem.getItem().getItem();
+//
+//    	    		float newHunger = animal.getHunger() + eatenFood.getHealAmount(this.foundItem.getItem()) + eatenFood.getSaturationModifier(this.foundItem.getItem()); 
+//    	    		int newHappiness = (int) (animal.getHappiness() + eatenFood.getHealAmount(this.foundItem.getItem()) + eatenFood.getSaturationModifier(this.foundItem.getItem())); 
+//
+//    	    		animal.setHunger(newHunger*this.foundItem.getItem().getCount());
+//    	    		animal.setHappiness(newHappiness*this.foundItem.getItem().getCount());    	
+//    	    	}
+//    	    	else
+//    	    	{
+//    	    		//stacksize loop here
+//    	            this.thisAnimal.eatGrassBonus();
+//    	    	}
+//	    	}        	
             this.foundItem.setDead();
             this.resetTask();
         }

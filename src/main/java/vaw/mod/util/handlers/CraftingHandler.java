@@ -19,30 +19,4 @@ public class CraftingHandler {
 		
 	}
 
-	public static void removeRecipes() {
-		 ForgeRegistry<IRecipe> recipeRegistry = (ForgeRegistry<IRecipe>)ForgeRegistries.RECIPES;
-	        ArrayList<IRecipe> recipes = Lists.newArrayList(recipeRegistry.getValues());
-	        
-	        for (IRecipe r : recipes)
-            {
-                ItemStack output = r.getRecipeOutput();
-                if (output.getItem() == Item.getItemFromBlock(Blocks.TORCH) && Config.disableVanillaTorches == true)
-                {
-                    recipeRegistry.remove(r.getRegistryName());
-                    //recipeRegistry.register(DummyRecipe.from(r));
-                }
-                //remove old bonemeal recipe for new crafting
-                if (output.getMetadata() == 15 && output.getItem() == Items.DYE && Config.shardsFromBone == true)
-                {
-                    recipeRegistry.remove(r.getRegistryName());
-                    //recipeRegistry.register(DummyRecipe.from(r));
-                }
-                //remove wool from string recipe for new crafting
-                if (output.getMetadata() == 0 && output.getItem() == Item.getItemFromBlock(Blocks.WOOL) && Config.woolSystem == true)
-                {
-                    recipeRegistry.remove(r.getRegistryName());
-                    //recipeRegistry.register(DummyRecipe.from(r));
-                }
-	}
-	}
 }

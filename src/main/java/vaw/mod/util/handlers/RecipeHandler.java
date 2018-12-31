@@ -30,25 +30,6 @@ public class RecipeHandler
 			//default to brown
 			//GameRegistry.addShapedRecipe(new ResourceLocation("NewBedHide"), new ResourceLocation("NewBeds"), new ItemStack(Items.BED, 1, 12),new Object[]{ "FFF", "FFF", "WWW", 'F', "furCut", 'W', "plankWood"});
 				
-		if (Config.enableFowl)
-		{
-			GameRegistry.addShapedRecipe(new ResourceLocation("EggCake"), new ResourceLocation("recipes"), new ItemStack(Item.getItemFromBlock(Blocks.CAKE), 1), new Object[]{ "BBB", "SES", "FFF", 'B', Items.MILK_BUCKET, 'S', Items.SUGAR, 'E', "egg", 'F', Items.WHEAT});
-		}
-
-		if (Config.paperFromWood)
-		{
-			GameRegistry.addShapedRecipe(new ResourceLocation("PaperWood"), new ResourceLocation("recipes"),  new ItemStack(Items.PAPER, 2), new Object[]{ "WWW", 'W', "logWood"});
-		}
-		
-		if (Config.sugarFromBeets) GameRegistry.addShapedRecipe(new ResourceLocation("recipes"), new ResourceLocation("SugarBeets"), new ItemStack(Items.SUGAR, 2), "BBB", 'B', Items.BEETROOT);
-		if (Config.craftableNametags) GameRegistry.addShapedRecipe(new ResourceLocation("recipes"), new ResourceLocation("NameTag"),new ItemStack(Items.NAME_TAG, 1), " S ", " PI", " P ", 'S', Items.STRING, 'P', Items.PAPER, 'I', new ItemStack(Items.DYE, 1, EnumDyeColor.BLACK.getDyeDamage()));
-		if (Config.craftableSaddles) GameRegistry.addShapedRecipe(new ResourceLocation("Saddle"), new ResourceLocation("Saddle"),new ItemStack(Items.SADDLE, 1), "LLL", "LSL", " I ", 'L', Items.LEATHER, 'S', Items.STRING, 'I', Items.IRON_INGOT);
-		if (Config.craftableHorseArmor == true)
-		{
-			GameRegistry.addShapedRecipe(new ResourceLocation("IronHorseArmor"), new ResourceLocation("IronHorseArmor"), new ItemStack(Items.IRON_HORSE_ARMOR), "  I", "IWI", "IWI", 'I', Item.getItemFromBlock(Blocks.IRON_BLOCK), 'W', new ItemStack(Item.getItemFromBlock(Blocks.WOOL), 1, 15));
-			GameRegistry.addShapedRecipe(new ResourceLocation("GoldHorseArmor"), new ResourceLocation("GoldHorseArmor"), new ItemStack(Items.GOLDEN_HORSE_ARMOR), "  G", "GWG", "GWG", 'G', Item.getItemFromBlock(Blocks.GOLD_BLOCK), 'W', new ItemStack(Item.getItemFromBlock(Blocks.WOOL), 1, 14));
-			GameRegistry.addShapedRecipe(new ResourceLocation("DiamondHorseArmor"), new ResourceLocation("DiamondHorseArmor"), new ItemStack(Items.DIAMOND_HORSE_ARMOR), "  D", "DWD", "DWD", 'D', Item.getItemFromBlock(Blocks.DIAMOND_BLOCK), 'W', new ItemStack(Item.getItemFromBlock(Blocks.WOOL), 1, 4));
-		}
 
 		 ItemInit.ACORN = Item.getByNameOrId("dynamictrees:oakseed");
 		 ItemInit.ACORN_DARK = Item.getByNameOrId("dynamictrees:darkoakseed");

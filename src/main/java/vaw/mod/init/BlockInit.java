@@ -5,7 +5,6 @@ import java.util.List;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import vaw.mod.objects.blocks.BlockGarlic;
 import vaw.mod.objects.blocks.BlockModPlant;
 
