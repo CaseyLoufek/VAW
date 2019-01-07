@@ -1,0 +1,24 @@
+package vaw.mod.objects.tools;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemSpade;
+import vaw.mod.Main;
+import vaw.mod.init.ItemInit;
+
+public class ToolShovel extends ItemSpade
+{
+
+	public ToolShovel(String name, ToolMaterial material)
+	{
+		super(material);
+		
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setCreativeTab(CreativeTabs.TOOLS);
+		
+		ItemInit.ITEMS.add(this);
+	}
+
+
+
+}
