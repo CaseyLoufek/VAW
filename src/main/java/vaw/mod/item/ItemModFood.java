@@ -16,10 +16,9 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import vaw.mod.Main;
 import vaw.mod.init.ItemInit;
-import vaw.mod.util.IHasModel;
 import vaw.mod.util.Reference;
 
-public class ItemModFood extends ItemFood implements IHasModel 
+public class ItemModFood extends ItemFood
 {
 	private PotionEffect[] effects;
 	private float effectChance;
@@ -123,10 +122,5 @@ public class ItemModFood extends ItemFood implements IHasModel
 		return (this.firstDrop != null);
 	}
 	
-	@Override
-	public void registerModels() 
-	{
-		// TODO Auto-generated method stub
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
-	}
+
 }

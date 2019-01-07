@@ -5,11 +5,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import vaw.mod.Main;
 import vaw.mod.init.ItemInit;
-import vaw.mod.util.Config;
-import vaw.mod.util.IHasModel;
 import vaw.mod.util.Reference;
 
-public class ItemFuel extends Item implements IHasModel
+public class ItemFuel extends Item
 {
 	protected int maxStackSize = 1;
     
@@ -23,12 +21,7 @@ public class ItemFuel extends Item implements IHasModel
 		ItemInit.ITEMS.add(this);
 	}
 
-	@Override
-	public void registerModels() 
-	{
-		// TODO Auto-generated method stub
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
-	}
+
 
 
 	@Override

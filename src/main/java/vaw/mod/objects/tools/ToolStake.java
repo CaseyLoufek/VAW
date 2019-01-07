@@ -1,9 +1,6 @@
 package vaw.mod.objects.tools;
 
-import java.util.Set;
-
 import com.google.common.collect.Sets;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -16,14 +13,14 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import net.minecraft.util.math.MathHelper;
-import vaw.mod.Main;
 import vaw.mod.init.ItemInit;
-import vaw.mod.util.IHasModel;
 import vaw.mod.util.Reference;
 
-public class ToolStake extends ItemTool implements IHasModel 
+import java.util.Set;
+
+public class ToolStake extends ItemTool
 {
-    private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(new Block[] {Blocks.WEB, Blocks.LEAVES, Blocks.LOG, Blocks.LOG2, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN, Blocks.MELON_BLOCK});
+    private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(Blocks.WEB, Blocks.LEAVES, Blocks.LOG, Blocks.LOG2, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN, Blocks.MELON_BLOCK);
 
     private String toolClass;
 	public ToolStake(String name, ToolMaterial material)
@@ -49,14 +46,10 @@ public class ToolStake extends ItemTool implements IHasModel
 		
 		ItemInit.ITEMS.add(this);
 	}
-    
-	@Override
-	public void registerModels() 
-	{
-		// TODO Auto-generated method stub
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
-	}
-	
+
+	public int getItemBurnTime(ItemStack item){
+	    return 200;
+    }
 
     @Override
     public int getHarvestLevel(ItemStack stack, String toolClass, @javax.annotation.Nullable net.minecraft.entity.player.EntityPlayer player, @javax.annotation.Nullable IBlockState blockState)
@@ -108,7 +101,7 @@ public class ToolStake extends ItemTool implements IHasModel
 	public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker)
     {
     	//weaken knockback effect, can be adjusted
-        if (target instanceof EntityLivingBase)
+        if (target != null)
         {
             target.knockBack(attacker, -0.1F, MathHelper.sin(attacker.rotationYaw * 0.017453292F), (-MathHelper.cos(attacker.rotationYaw * 0.017453292F)));
         }

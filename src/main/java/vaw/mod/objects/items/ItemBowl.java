@@ -14,10 +14,9 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 import vaw.mod.Main;
 import vaw.mod.init.ItemInit;
-import vaw.mod.util.IHasModel;
 import vaw.mod.util.Reference;
 
-public class ItemBowl extends Item implements IHasModel
+public class ItemBowl extends Item
 {
 
 	protected int maxStackSize = 1;
@@ -32,12 +31,7 @@ public class ItemBowl extends Item implements IHasModel
 		ItemInit.ITEMS.add(this);
 	}
 
-	@Override
-	public void registerModels() 
-	{
-		// TODO Auto-generated method stub
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
-	}
+
 	
 
 	@Override

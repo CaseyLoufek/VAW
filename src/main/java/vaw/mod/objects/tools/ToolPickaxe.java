@@ -4,9 +4,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemPickaxe;
 import vaw.mod.Main;
 import vaw.mod.init.ItemInit;
-import vaw.mod.util.IHasModel;
 
-public class ToolPickaxe extends ItemPickaxe implements IHasModel 
+public class ToolPickaxe extends ItemPickaxe
 {
 
 	public ToolPickaxe(String name, ToolMaterial material)
@@ -20,11 +19,6 @@ public class ToolPickaxe extends ItemPickaxe implements IHasModel
 		ItemInit.ITEMS.add(this);
 	}
 
-	@Override
-	public void registerModels() 
-	{
-		// TODO Auto-generated method stub
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
-	}
+
 
 }

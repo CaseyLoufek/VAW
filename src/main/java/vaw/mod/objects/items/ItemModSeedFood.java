@@ -12,10 +12,9 @@ import net.minecraft.world.World;
 import vaw.mod.Main;
 import vaw.mod.init.BlockInit;
 import vaw.mod.init.ItemInit;
-import vaw.mod.util.IHasModel;
 import vaw.mod.util.Reference;
 
-public class ItemModSeedFood extends ItemSeedFood implements IHasModel
+public class ItemModSeedFood extends ItemSeedFood
 {
     
 	public ItemModSeedFood(String name, int healAmount, float saturation, Block crops, Block soil)
@@ -28,12 +27,7 @@ public class ItemModSeedFood extends ItemSeedFood implements IHasModel
 		ItemInit.ITEMS.add(this);
 	}
 
-	@Override
-	public void registerModels() 
-	{
-		// TODO Auto-generated method stub
-		Main.proxy.registerItemRenderer(this, 0, "inventory");		
-	}
+
 
     /**
      * Called when a Block is right-clicked with this Item

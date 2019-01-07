@@ -4,10 +4,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemSpade;
 import vaw.mod.Main;
 import vaw.mod.init.ItemInit;
-import vaw.mod.util.IHasModel;
-import vaw.mod.util.Reference;
 
-public class ToolShovel extends ItemSpade implements IHasModel 
+public class ToolShovel extends ItemSpade
 {
 
 	public ToolShovel(String name, ToolMaterial material)
@@ -21,11 +19,6 @@ public class ToolShovel extends ItemSpade implements IHasModel
 		ItemInit.ITEMS.add(this);
 	}
 
-	@Override
-	public void registerModels() 
-	{
-		// TODO Auto-generated method stub
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
-	}
+
 
 }

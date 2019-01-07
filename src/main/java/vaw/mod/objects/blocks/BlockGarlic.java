@@ -3,13 +3,11 @@ package vaw.mod.objects.blocks;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
-import vaw.mod.Main;
 import vaw.mod.init.BlockInit;
 import vaw.mod.init.ItemInit;
-import vaw.mod.util.IHasModel;
 import vaw.mod.util.Reference;
 
-public class BlockGarlic extends BlockCrops implements IHasModel
+public class BlockGarlic extends BlockCrops
 {
 
 	public BlockGarlic(String name, Material material) {
@@ -21,15 +19,7 @@ public class BlockGarlic extends BlockCrops implements IHasModel
 		BlockInit.BLOCKS.add(this);
 	}
 	
-	@Override
-	public void registerModels() 
-	{
-		// model handling
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-	}
-	
-
-    protected Item getSeed()
+	protected Item getSeed()
     {
         return ItemInit.GARLIC;
     }

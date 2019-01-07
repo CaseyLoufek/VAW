@@ -3,11 +3,8 @@ package vaw.mod.model;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.math.MathHelper;
 
-/**
- * ModelCow - Either Mojang or a mod author
- * Created using Tabula 6.0.0
- */
 public class ModelVampire extends ModelBase {
     public ModelRenderer Head;
     public ModelRenderer RightArm;
@@ -68,9 +65,17 @@ public class ModelVampire extends ModelBase {
         this.Head.render(f5);
     }
 
-    /**
-     * This is a helper function from Tabula to set the rotation of model parts
-     */
+    @Override
+    public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity){
+        super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+        this.RightLeg.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1 / f;
+        this.LeftLeg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1 / f;
+        this.RightLeg.rotateAngleY = 0.0F;
+        this.LeftLeg.rotateAngleY = 0.0F;
+        this.RightLeg.rotateAngleZ = 0.0F;
+        this.LeftLeg.rotateAngleZ = 0.0F;
+    }
+
     public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
         modelRenderer.rotateAngleX = x;
         modelRenderer.rotateAngleY = y;

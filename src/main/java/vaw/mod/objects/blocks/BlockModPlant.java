@@ -12,10 +12,9 @@ import net.minecraft.world.World;
 import vaw.mod.Main;
 import vaw.mod.init.BlockInit;
 import vaw.mod.init.ItemInit;
-import vaw.mod.util.IHasModel;
 import vaw.mod.util.Reference;
 
-public class BlockModPlant extends BlockBush implements IHasModel
+public class BlockModPlant extends BlockBush
 {
 
 	public BlockModPlant(String name, Material material) {
@@ -29,12 +28,7 @@ public class BlockModPlant extends BlockBush implements IHasModel
 		// TODO Auto-generated constructor stub
 	}
 	
-	@Override
-	public void registerModels() 
-	{
-		// TODO Auto-generated method stub
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-	}
+
 	
 	//grow in darkness during new moon
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)

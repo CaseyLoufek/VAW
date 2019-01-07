@@ -13,10 +13,8 @@ import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
 import vaw.mod.Main;
 import vaw.mod.init.ItemInit;
-import vaw.mod.util.IHasModel;
-import vaw.mod.util.Reference;
 
-public class ToolAxe extends ItemAxe implements IHasModel 
+public class ToolAxe extends ItemAxe
 {
     private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(new Block[] {Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN, Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE});
 
@@ -50,11 +48,6 @@ public class ToolAxe extends ItemAxe implements IHasModel
         return material != Material.WOOD && material != Material.PLANTS && material != Material.VINE ? super.getDestroySpeed(stack, state) : this.efficiency;
     }
 
-	@Override
-	public void registerModels() 
-	{
-		// TODO Auto-generated method stub
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
-	}
+
 
 }
