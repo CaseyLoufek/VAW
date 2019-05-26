@@ -3,6 +3,7 @@ package vaw.mod;
 import java.io.File;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -12,6 +13,9 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import vaw.mod.api.IWerewolf;
+import vaw.mod.capability.WerewolfCap;
+import vaw.mod.capability.storage.WerewolfStorage;
 import vaw.mod.init.EntityInit;
 import vaw.mod.proxy.CommonProxy;
 import vaw.mod.util.Config;
@@ -49,7 +53,9 @@ public class Main {
         EntityInit.init();
         proxy.initModels();
      
-  		GameRegistry.registerFuelHandler(new FuelHandler());   
+  		GameRegistry.registerFuelHandler(new FuelHandler());
+  		
+  		CapabilityManager.INSTANCE.register(IWerewolf.class, new WerewolfStorage(), WerewolfCap::new);
 	}
 	
 	@EventHandler
